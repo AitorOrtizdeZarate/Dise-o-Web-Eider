@@ -4,7 +4,6 @@ h1 {
 .tarjetas{
 	background-color: white;
 	flex: 25%;
-	
 	justify-content: center;
 	margin: 1%;
 }
@@ -16,11 +15,13 @@ img{
 	flex-wrap: wrap;
 	text-align: center;
 	background-color: grey;
+	justify-content: center;
 	
 }
 body{
 	width: 90%;
 	margin-left: 5%;
+
 	
 }
 .boton1{
@@ -33,7 +34,16 @@ body{
 .rosa{
 	color: pink;
 }
-footer{
-	display: flex;
-	justify-content: center;
+
+@media (max-width: 1000px){
+	.tarjetas{
+		flex: 45%;
+	}
 }
+
+@media (max-width: 700px){
+	.tarjetas{
+		flex: 99%;
+	}
+}
+
