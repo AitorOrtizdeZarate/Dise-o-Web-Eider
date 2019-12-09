@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>Ejercicio 3</title>
+    <style type="text/css">
+    	.bg-primary{
+	transition: all 1s ease;
+}
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-md sticky-top" id="menu">
     	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
   		<a class="navbar-brand " href="#">
-  			<img src="img/logo.jpg" class="rounded-circle">
+  			<img src="img/logo.jpg" class="rounded-circle" width="30px" height="30px">
   		</a>
 		
 
@@ -225,5 +230,17 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+        if ($("#menu").offset().top > 56) {
+            $("#menu").addClass("bg-primary");
+            $("#menu").addClass("navbar-dark");
+        } else {
+            $("#menu").removeClass("bg-primary");
+            $("#menu").removeClass("navbar-dark");
+
+        }
+      });
+</script>
   </body>
 </html>
