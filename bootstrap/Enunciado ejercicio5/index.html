@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+      body{
+        background-image: url(img/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .bg-secundary{
+      transition: all 1s ease;
+}
+    </style>
+    <title>Ejercicio 5</title>
+  </head>
+  <body>
+    <div class="d-flex flex-row justify-content-between navbar navbar-expand-md" id="menu">
+      <div>
+        <a href="#" class="btn border border-white text-white" data-toggle="modal" data-target="#ModalInicio">INICIO</a>
+        
+        <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="ModalInicio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h1 class="modal-title text-white" id="exampleModalLabel">INICIO</h1>
+                  
+                </div>
+                <div class="modal-body">
+                  <img src="img/home.jpg">
+                  <p class="text-white">Amamochilera es una agencia de viajes de aventura que pone tu alcance conocer otros paises y culturas de una manera muy diferente.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <a href="#" class="btn border border-white text-white">Nosotros</a>
+      </div>
+      <div class="d-flex flex-row align-items-center">
+        <img src="img/logo.jpg" class="rounded-circle" width="70px" height="70px">
+        <p class="text-white ">Almamochilera</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 text-center text-white mt-5">
+      <i class="fa fa-circle-o-notch fa-spin" style="font-size:100px"></i>
+      <h2>¡ESTE AÑO HAZ ALGO INCREIBLE!</h2>
+      <p style="font-size: 18px;" class="text-secondary">Si tu sueño siemre ha sido viajar por el mundo has llegado al lugar correcto. No importa si, tienes 15 o 90 años, estudias o trabajas, viajas solo o con tu familia, aqui encontrarás todo lo que necesitas saber para hacer tu sueño realidad.</p>
+      
+      <a href="#" class="btn border border-white text-white" data-toggle="modal" data-target="#ModalContacto">Contacto</a>
+    </div>
+    <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="ModalContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h1 class="modal-title text-white" id="exampleModalLabel">INFORMATE</h1>
+                  
+                </div>
+                <div class="modal-body text-white">
+                  <div class="row">
+                    <div class="col-6">
+                    Email<br>
+                    <input type="text" name="email" class="rounded" style="width: 100%;">
+                    <br><br>
+                    Mensaje<br>
+                    <textarea class="rounded" style="width: 100%;"></textarea>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
+                  </div>
+                  <div class="col-6">
+                    <img src="img/contacto.jpg">
+                    <p class="text-secondary">Telefono: +56 5 5555 5555<br>
+                    Email: sitio@dominio.com<br>
+                    J.M Barandiaran, 10-12 - 20013 Donostia - San Sebastian
+                    </p>
+
+                  </div>
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+        if ($("#menu").offset().top > 30) {
+            $("#menu").addClass("bg-secondary");
+            $("#menu").addClass("navbar-dark");
+        } else {
+            $("#menu").removeClass("bg-secondary");
+            $("#menu").removeClass("navbar-dark");
+
+        }
+      });
+</script>
+  </body>
+</html>
